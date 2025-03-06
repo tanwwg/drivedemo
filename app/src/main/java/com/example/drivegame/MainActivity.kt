@@ -161,10 +161,6 @@ fun DriveGame(modifier: Modifier = Modifier) {
             val internalSize = Size(100f, 200f)
             val scaleFactor = min(size.width / internalSize.width, size.height / internalSize.height)
 
-            val spacing = 10f
-            val markingHeight = 10f
-            val numMarkings = internalSize.height / (spacing + markingHeight)
-
             print(scaleFactor)
             withTransform({
                 scale(scaleX = 1.0f, scaleY = -1.0f, pivot = Offset.Zero)
